@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>lab_4(SAIPIS)</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <img src="hotel.jpg" alt="Hotel" id="hotel" />
+        <img src="logo.png" alt="Logo" id="logo" />
+      </div>
+      <div id="article">
+        <form id="dataForm">
+          <h3>ОБРАТНАЯ СВЯЗЬ С КЛИЕНТАМИ</h3>
+
+          <textarea
+            name="preference"
+            id="preference"
+            placeholder="Напишите ваши предпочтения при выборе отеля..."
+            cols="60"
+            rows="10"
+          ></textarea>
+
+          <textarea
+            name="review"
+            id="review"
+            placeholder="Оставьте отзыв на обслуживание в отеле..."
+            cols="60"
+            rows="10"
+          ></textarea>
+
+          <div style="margin-top: 1em">
+            <label for="font-size" style="margin-left: 2.5em"
+              >Выберите размер шрифта:</label
+            >
+            <select
+              id="font-size"
+              style="
+                display: flex;
+                margin-top: 0.5em;
+                margin-left: 2.2em;
+                height: 1.5em;
+                border-radius: 5px;
+                background-color: #ececec;
+                font-size: large;
+              "
+            >
+              <option value="Small">Small</option>
+              <option value="Large">Large</option>
+              <option value="Medium">Medium</option>
+            </select>
+          </div>
+
+          <div style="margin-top: 1em">
+            <label for="color" style="margin-left: 2.5em; display: flex"
+              >Выберите цвет шрифта:</label
+            >
+
+            <input type="radio" name="color" id="red" />
+            <label for="red" style="color: red">Red</label>
+            <input type="radio" name="color" id="blue" />
+            <label for="blue" style="color: blue">Blue</label>
+            <input type="radio" name="color" id="green" />
+            <label for="green" style="color: green">Green</label>
+          </div>
+
+          <div>
+            <p style="margin-left: 2em; margin-bottom: 0.8em; margin-top: 2em">
+              Нажмите на "Отправить", если заполнили форму.
+            </p>
+            <input
+              style="margin-left: 7em; font-size: large"
+              type="submit"
+              value="Отправить"
+              name="submit"
+            />
+          </div>
+        </form>
+      </div>
+      <div id="footer">
+        <p id="address">
+          Республика Беларусь, <br />Минская обл., г. Минск, <br />Я. Коласа,
+          28, 220013
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

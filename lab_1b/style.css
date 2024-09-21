@@ -1,0 +1,81 @@
+.block-left {
+  width: 50%;
+  overflow: auto;
+  float: left;
+}
+
+.block-right {
+  width: 50%;
+  overflow: auto;
+  background-image: url("cat.png");
+  background-origin: border-box;
+  opacity: 0.85;
+}
+
+h1 {
+  color: rgb(79, 49, 27);
+  text-align: center;
+}
+
+h2 {
+  color: rgb(64, 14, 14);
+  margin-left: 7em;
+  width: 400px;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.column {
+  width: 23%;
+  padding: 7px;
+  float: left;
+  color: cornsilk;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+.layout {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.animated-object {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: moveAndRotate 10s linear infinite;
+}
+
+@keyframes moveAndRotate {
+  0%,
+  100% {
+    left: 0;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  25%,
+  75% {
+    left: calc(100% - 100px);
+    transform: rotate(360deg);
+    opacity: 0.5;
+    /* background-color: blue; */
+  }
+  50% {
+    left: 0;
+    transform: rotate(720deg);
+    opacity: 1;
+    /* background-color: green; */
+  }
+}

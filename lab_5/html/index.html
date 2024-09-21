@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Поликлиника</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <h1>ПОЛИКЛИНИКА</h1>
+
+    <form id="clientForm">
+      <label for="clientId">ID:</label>
+      <select id="clientId">
+        <option value="-1">-- Новый --</option>
+      </select>
+
+      <label for="clientFIO">ФИО:</label>
+      <input type="text" id="clientFIO" required />
+
+      <label for="clientAddress">Адрес:</label>
+      <input type="text" id="clientAddress" required />
+
+      <label for="clientPhone">Телефон:</label>
+      <input type="text" id="clientPhone" required />
+
+      <label for="clientIllness">Признак оказания мед. помощи:</label>
+      <input type="text" id="clientIllness" required />
+
+      <label for="clientProperty">Новое свойство:</label>
+      <input type="text" id="clientProperty" />
+
+      <label for="clientPropertyValue">Значение свойства:</label>
+      <input type="text" id="clientPropertyValue" />
+
+      <button type="button" id="addButton">Добавить</button>
+      <button type="button" id="clearButton">Очистить</button>
+      <button type="button" id="deleteButton">Удалить</button>
+      <button type="button" id="showAllButton">Показать всех клиентов</button>
+    </form>
+
+    <table id="clientTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>ФИО пациента</th>
+          <th>Адрес</th>
+          <th>Номер телефона</th>
+          <th>Признак оказания помощи</th>
+          <th>Новое свойство</th>
+          <th>Значение</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <ul id="clientsList"></ul>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+  <script src="../scripts/index.js"></script>
+</html>

@@ -1,0 +1,120 @@
+#background {
+  width: 1500px;
+  height: 790px;
+  margin: auto;
+  margin-top: 1.3em;
+  margin-left: 1em;
+  padding-left: 0;
+  background: radial-gradient(#fdfafd, #d6b7cd);
+  box-shadow: 8px 10px 5px 2px #7b747a;
+  border-radius: 25px;
+}
+
+#background_2 {
+  width: 1500px;
+  height: 820px;
+  margin: auto;
+  margin-top: 1.3em;
+  margin-left: 1em;
+  padding-left: 0;
+  background: linear-gradient(#ebf3fc, #999cd2);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+header {
+  color: #4f253c;
+  font-weight: bold;
+  font-size: xxx-large;
+  text-align: center;
+  padding-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+div > p {
+  width: 70%;
+  font-size: 1.2em;
+  float: left;
+  margin-left: 2em;
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 1.2em;
+}
+
+textarea {
+  margin-left: 1em;
+  background-color: #ebe9e9;
+  width: 300px;
+  height: 200px;
+  padding-left: 1em;
+  padding-top: 1em;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+}
+
+textarea:not(:placeholder-shown) {
+  color: blue;
+  font-size: 1em;
+  font-family: "Arial";
+}
+
+figure {
+  margin: 0;
+}
+
+#image_footer {
+  width: 1470px;
+  height: 445px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: 15px solid #231b3705;
+  border-right: 15px solid #231b3705;
+  border-bottom: 15px solid #231b3705;
+}
+
+#a_dune-2 {
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: rgb(255, 255, 117);
+}
+
+ul {
+  width: 450px;
+  margin-left: 1em;
+  font-size: 22px;
+  display: inline-block;
+}
+
+svg {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#trailer {
+  font-size: small;
+  float: right;
+  margin-top: 2em;
+  margin-right: 2em;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink-text {
+  animation: blink 1s step-end infinite;
+}

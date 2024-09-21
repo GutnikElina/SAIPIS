@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Array</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sorting Array</h1>
+    </header>
+    <main>
+      <table id="arrayTable"></table>
+      <div class="buttons">
+        <button onclick="sortArray('asc')">Sort Ascending</button>
+        <button onclick="sortArray('desc')">Sort Descending</button>
+      </div>
+      <div class="options">
+        <input
+          type="checkbox"
+          id="formatCheckbox"
+          onchange="toggleDecimalFormat()"
+        />
+        <label for="formatCheckbox">Show decimal format</label>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

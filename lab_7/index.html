@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="input1">Введите текст 1:</label>
+      <input type="text" id="input1" /><br /><br />
+
+      <label for="input2">Введите текст 2:</label>
+      <input type="text" id="input2" /><br /><br />
+
+      <label for="colorSelect">Цвет текста:</label>
+      <select id="colorSelect">
+        <option value="black">Черный</option>
+        <option value="red">Красный</option>
+        <option value="blue">Синий</option></select
+      ><br /><br />
+
+      <label>Размер шрифта:</label><br />
+      <input type="radio" id="smallFont" name="fontSize" value="small" />
+      <label for="smallFont">Маленький</label><br />
+      <input type="radio" id="mediumFont" name="fontSize" value="medium" />
+      <label for="mediumFont">Средний</label><br />
+      <input type="radio" id="largeFont" name="fontSize" value="large" />
+      <label for="largeFont">Большой</label><br /><br />
+
+      <button type="button" id="loadXML">Загрузить данные из XML</button>
+      <button type="button" id="loadScript">Загрузить скрипт</button>
+      <button type="button" id="clearForm">Очистить форму</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
